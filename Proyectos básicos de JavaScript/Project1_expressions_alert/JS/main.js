@@ -37,3 +37,8 @@ function miPrimeraFuncion(){
     var result = str.fontcolor("green");
     document.getElementById("Texto_verde").innerHTML = result;
 }
+
+//creando un evento de fecha
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+  }
