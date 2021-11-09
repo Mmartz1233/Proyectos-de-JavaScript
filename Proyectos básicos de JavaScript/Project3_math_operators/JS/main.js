@@ -85,3 +85,14 @@ const person = {
       return this.suma + " / " + this.resta +" / " + this.mult +" / " + this.div +" / " + this.moudulo+" / " + this.aleatorio;
     }
   };
+
+  function miDiccionario(){
+      var Animal ={
+          Especie:"Dog",
+          Color:"Black",
+          Breed:"Labrador",
+          Age:5,
+          Sonido:"Bark"
+      };
+      document.getElementById("Diccionario").innerHTML=Animal.Especie;
+  }
