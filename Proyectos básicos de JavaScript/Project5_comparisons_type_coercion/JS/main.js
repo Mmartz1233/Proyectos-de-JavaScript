@@ -51,3 +51,7 @@ document.writeln(w===s);
 //empleando operadores logicos booleanos
 document.write(5>2 && 10>4);
 document.write(5>10 || 10<4);
+
+
+
+
