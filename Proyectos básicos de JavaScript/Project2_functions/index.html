@@ -8,6 +8,28 @@
 	
 	<button onclick="displayDate()" id="demo">Que dia es hoy?</button>
     <ip id="Concatene" onclick="miFuncion()">Dar click</ip>
+
+<!--Creando una funcion en HTML-->
+    <p id="demo2"></p>
+    <script>
+        function myFunction(p1, p2) {
+          return p1 * p2;
+        }
+        document.getElementById("demo2").innerHTML = myFunction(4, 3);
+    </script>
+   
+<!--Creando una funcion en HTML-->
+        <p id="dem3">Da clic y el texto cambiara </p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <script>
+        function myFunction() {
+        document.getElementById("dem3").innerHTML = "Hello World";
+        }
+        </script>
+
+
 	
 </body>
 </html>
