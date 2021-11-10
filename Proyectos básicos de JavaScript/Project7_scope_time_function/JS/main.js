@@ -54,3 +54,4 @@ function sumandoNumeros4(){
      }
      document.getElementById("tiempo_dia").innerHTML= reply;
  }
+ 
