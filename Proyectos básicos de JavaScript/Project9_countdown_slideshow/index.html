@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<script src="JS/main.js"></script>
+<link rel="stylesheet" type ="text/css" href = "CSS/main.css">
+
+</head>
+<body>
+    <!--CREANDO TEMPORIZADOR-->
+<p>En cuantos segundos te gustaria poner tu alarma?</p>
+<input id="Seconds" value=""/>
+<button onclick="countdown()">click</button>
+<p id="timer"></p>
+
+    <!--CREANDO PRESENTACION-->
+<!-- Contenedor de presentación de diapositivas -->
+<h2> presentación  de Diapositivas</h2>
+
+
+<div class="slideshow-container">
+  
+
+    <!-- Imágenes de ancho completo con texto numérico y de leyenda -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img1.jpg" style="width:100%">
+      <div class="text">Bosque</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img2.jpg" style="width:100%">
+      <div class="text">Lago</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img3.jpg" style="width:100%">
+      <div class="text">Nieve</div>
+    </div>
+  
+    <!-- Botones siguiente y anterior -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- Los puntos / círculos -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+
+</body>
+</html>
