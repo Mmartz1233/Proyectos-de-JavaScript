@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<script src="JS/while.js" ></script>
+<script src="JS/while.js" defer></script>
+</head>
+<body>
+    <!--Utilizando defer -->
+    
+    <p id="p2"> Hola mundo 2 </p>
+
+<!--Detectando el error-->
+<script>
+    A = "ALWAYS ";
+    B = "REMEMBER ";
+    document.write(A + B);
+
+    X = "YOU ";
+    Y = " ARE ";
+    document.write(X + Y );
+
+    M = "UNIQUE ";
+    N = "JUST LIKE EVERYONE ELSE ";
+    document.write(N + M);
+</script>
+
+
+ <!--Utilizando el ciclo  while -->
+ <p id="cuentadiez"></p>
+ <button onclick="contFunc()">Ver ciclo while</button>
+
+ <!--Utilizando length-->
+<p id="demos" onclick="longitudTextoFunc()">Cuenta palabras </p>
+
+ <!--Utilizando el ciclo for-->
+<p id="listadeinstrumentos"></p>
+<button onclick="cicloforFunc()">Ver ciclo for</button>
+
+<!--Emplando objetos y arrays-->
+<p id="cat"></p>
+<button onclick="catimages()"> ver gatos</button>
+
+<!--Empleando constantes-->
+<p id="cons"></p>
+<button onclick="consFunc()">mustrando una constante</button>
+
+<!--Empleando funciones de retorno-->
+<p id="retorn"></p>
+<p id="carros"></p>
+<p id="break"></p>
+<p id="continue"></p>
+<script>
+    document.getElementById("retorn").innerHTML = retornFunc("Mayra y Alexis");
+    document.getElementById("carros").innerHTML = carro.descripcion();
+    document.getElementById("break").innerHTML = textobreak;
+    document.getElementById("continue").innerHTML = textoconinue;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

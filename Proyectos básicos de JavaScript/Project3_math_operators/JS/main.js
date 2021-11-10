@@ -60,6 +60,7 @@ var y = 4.5;
 y--;
 document.writeln("El decremento de cuatro punto cinco es : "+y);
 
+
 // Funcion Random
 window.alert(Math.random());
 window.alert(Math.random() * 100); // muestra un num aleatorio entre 0 y 100
