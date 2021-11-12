@@ -21,7 +21,7 @@ function placeXOro(squareNumber){
             select.style.backgroundImage = 'url("images/o.png")';
         }
         //se concatenan esta dos variables y se agrega un array
-        selectedSquares.push(squareNumber+activePlayer);
+        selectedSquares.push(squareNumber + activePlayer);
         //se llama a la funcion para revisar el ganador segun las condiciones
         checkWinConditions();
         //esta condicion es para cambiar el jugador activo
@@ -40,7 +40,7 @@ function placeXOro(squareNumber){
             //esta condicion desabilita el click para la eleccion de la computadora
             disableClick();
             //esta funcion espera 1 seg despues de la imagen de la compu y habilita el click
-            setTimeout(function(){computersTurn();},1000)
+            setTimeout(function(){computersTurn(); },1000)
         }
         //retorna verdadro si es necesario trabajar con la funcion
         return true;
@@ -95,13 +95,13 @@ function checkWinConditions(){
         //esta funcion da sonido
         audio('./media/tie.mp3');
         // esta funcion pone durante tres egundos despues de resetear el juego
-        setTimeout(function() {resetGame();},1000);
+        setTimeout(function() {resetGame(); }, 1000);
     }
-
-    function arrayIncludes(squareA, squareAB, squareC){
+//esta funcion revissa si un array incluye 3 string, estos son revisados para  revisar cada funcion
+    function arrayIncludes(squareA, squareB, squareC){
         //Estas 3 variables seran usadas para revisarlas
         const a = selectedSquares.includes(squareA)
-        const b = selectedSquares.includes(squareAB)
+        const b = selectedSquares.includes(squareB)
         const c = selectedSquares.includes(squareC)
         //si las 3 variables pasan todas son incluidas innuestro array verdadero
         //regresa y nuestra condiucion executa la funcion de linea ganadora 
@@ -141,13 +141,13 @@ function animateLineDrawing(){
 //esta variable crea un loop
 const animationLoop = requestAnimationFrame(animateLineDrawing);
 //este metodo limpia el contenido de la ultima interacion
-c.clearRect(0,0,608,608)
+c.clearRect(0, 0, 608, 608)
 //este metodo empieza una nueva path
 c.beginPath();
 //este metodo los mueve  a un puneto de la linea
-c.moveTo(xl,yl)
+c.moveTo(xl, yl)
 //este metodo indica donde termona la linea
-c.lineTo(x,y)
+c.lineTo(x, y)
 //este metodo coloca la liena al final
 c.lineWidth = 10;
 //este metodo le da color a la linea
@@ -157,17 +157,17 @@ c.stroke();
 //esta condicon revisa si fueron alcanzados por el punto final
 if (xl <= x2 && yl <= y2){
     //esta condicion agrega 10 a la previo punto x
-    if (x < x2){x +=10;}
-    if (y < y2){y += 10;}
+    if (x < x2){ x +=10; }
+    if (y < y2){ y += 10; }
     //esta animacionn cancela la animacion loop
-    if (x >= x2 && y >= y2){cancelAnimationFrame(animationLoop);}
+    if (x >= x2 && y >= y2){cancelAnimationFrame(animationLoop); }
 }
 //esta condicion es similar a el a poner uno encima
 //esto es necesario para eh 642 condicion de ganar
-if(xl <= x2 && y1 >= y2){
-    if (x < x2){ x += 10;}
-    if (y > y2){ y -= 10;}
-    if (x >= x2 && y <= y2){cancelAnimationFrame(animationLoop);}
+if(xl <= x2 && yl >= y2){
+    if (x < x2){ x += 10; }
+    if (y > y2){ y -= 10; }
+    if (x >= x2 && y <= y2){cancelAnimationFrame(animationLoop); }
 }
 
 }
@@ -178,7 +178,7 @@ function clear(){
     //esta linea empieza la animaciond e loop
     const animationLoop = requestAnimationFrame (clear);
     //esta linea limpia el canvas
-    c.clearRect (0,0,608,608);
+    c.clearRect (0, 0, 608, 608);
     cancelAnimationFrame(animationLoop);
 }
 
@@ -189,7 +189,7 @@ audio('./media/WinGame.mp3');
 //esta liena llama a la animacion main loop
 animateLineDrawing();
 //esta liena espera 1 seguno, luego limpia el cambas y reseta el juego y permite hacer click de nuevo
-setTimeout(function(){clear(); resetGame ();},1000);
+setTimeout(function() { clear(); resetGame (); },1000);
 
 
 
