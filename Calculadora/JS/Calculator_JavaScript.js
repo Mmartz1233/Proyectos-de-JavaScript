@@ -1,4 +1,5 @@
 //creamos una nueva liena que mantenga  la evaluacion de cinta
+//Calculadora By Mayra Martz
 const Calculator = {
     //este muestra cero en la pantalla
     Display_Value:'0',
