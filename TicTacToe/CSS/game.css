@@ -1,0 +1,45 @@
+/*Este contenedor incluye nuestra tabla y el contenedor de graficos*/
+.center-container{
+    /*Propiedad de ancho*/
+    width: 608px;
+     /*Propiedad es del centro de contenedor*/
+     margin: 0 auto;
+      /*50 px de abajo hacia arriba*/
+      margin-top: 50px;
+}
+table{
+    /* Esta propiedad contrae la tabla bordea en 1 borde*/
+    border-collapse: collapse;
+    /* Esta propiedad oculta los bordes sobre la tabla*/
+    border-style: hidden;
+}
+td{
+    /* procesador de hipertexto
+    esta propiedad cambia los elementos al pasar el cursor sobre esta*/
+    cursor: pointer;
+    
+    /*Es una propiedad que pone sobre el estilo del borde*/
+    border: 4px solid rgba(75, 19, 206, 0.8);
+
+     /*Esta propiedad remueve el relleno por default*/
+     padding: 0%;
+     width: 200px;
+     height: 200px;
+}
+
+canvas{
+    /*Es una propiedad coloca la posisicon del el canvas hasta arribra de la esquina con el contenedor*/
+    position: absolute;
+    z-index: 10;
+    /*Es una propiedad hace el canvas imposible*/
+    pointer-events: none;
+}
+h1{
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1c1fe9;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
