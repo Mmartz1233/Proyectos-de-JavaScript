@@ -22,9 +22,12 @@ $(document).ready(function(){
     );
     $("#2").css({"color":"red"});
     $("#3").click(function(){
+        //Ocultar los parrafos
         $('h1').hide();
     });
+    //// Configuración de evento equivalente usando el método `.on ()`
     $( "#4" ).on( "click", function() {
+        //// Ocultar lentamente todos los párrafos
         $( "#4" ).hide( "slow" );
     
 });
