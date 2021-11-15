@@ -54,7 +54,7 @@ function placeXOro(squareNumber){
         //esta funcion permite a nuestro while seguir tratando si nuestro cuadro esta seleccionado
         while(!success){
             //un numero aleatorio en medio de 0 y 8 es seleccionado
-            pickASquare - String(Math.floor(Math.random() * 9));
+            pickASquare = String(Math.floor(Math.random() * 9));
             //si el numero aleatorio evalua un return true, el cuadro ya no estara seleccionado
             if(placeXOro(pickASquare)){
                 //esta linea llama la funcion
