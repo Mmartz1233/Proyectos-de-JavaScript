@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="react.js"></script>
+	<script src="react-dom.js"></script>
+	<title></title>
+</head>
+<body>
+<div id="My_React_Code"></div>
+<script>
+	var Counter = React.createClass({ //crea clases de componentes
+		render: function(){
+			var time_Passed=Math.round(this.props.time_Passed/100);
+			var seconds_Passed = time_Passed/10 + (time_Passed % 10? '': '.0'); //comprueba si una condición es verdadera o no, % encuentra el resto
+			var text = 'My react code starded running '+seconds_Passed+'seconds ago!';
+			return React.DOM.p(null, text);
+		}
+	});
+
+	var counter_Factory = React.createFactory(Counter); //objeto que puede crear otros objetos)
+	var start_Counting = new Date().getTime();
+	//un método que evalúa una expresión a intervalos específicos (milisegundos):
+	setInterval (function(){
+		//para renderizar un componente o componentes de React
+		ReactDOM.render(
+			counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+			document.getElementById('My_React_Code')
+		);
+	}, 50);
+</script>
+</body>
+</html>

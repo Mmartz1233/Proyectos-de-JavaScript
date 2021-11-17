@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<title></title>
+</head>
+<body>
+<div id="like_button_container"></div>
+<script>
+const X = React.createElement;
+class likeButton extends React.Component{
+    //props abreviatura de propiedades
+    constructor(props){
+        // llama a un constructor
+        super(props);
+        //programa una actualización de la interfaz de usuario
+        this.state = {liked : false};
+    }
+    render (){
+        if (this.state.liked){
+            return 'you clicked the like button!';
+        }
+
+        return X(
+            'button',
+            {onClick: () => this.setState({liked:true}) },
+            'Like'
+        );
+    }
+}
+const domContainer = document.querySelector('#like_button_container');
+ReactDOM.render(X(likeButton), domContainer);
+</script>
+</body>
+</html>

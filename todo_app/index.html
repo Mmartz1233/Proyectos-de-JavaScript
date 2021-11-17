@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TODO</title>
+        <link rel="stylesheet" href="css/todo.css">
+
+
+    </head>
+    <body>
+        <p id="myDog"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="example" ondblclick="myfunc()">Doble click en el parrafo</p>
+        <input id="task"> <button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+        <script src="js/todo.js"></script>
+
+
+
+        <script>
+            document.getElementById("myDog").innerHTML = JSONstring;
+            document.getElementById("demo").innerHTML = obj.firstName;
+            document.getElementById("demo1").innerHTML = localStorage.getItem("Name");
+            //ejemplo de la funcion ondclick, hace que el texto al dar doble click, cambie a rojo
+            function myfunc(){
+                document.getElementById("example").style.color = "red";
+            }
+                        </script>
+       
+      
+
+    </body>
+    <footer> Mayra martz <br> Fecha: 17/11/2021</footer>
+ </html>

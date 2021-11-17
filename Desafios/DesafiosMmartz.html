@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DesafiosMmartz</title>
+        <script src="JS/Desafios_JavaScript.js"></script>
+        <link rel="stylesheet" href="CSS/Desafio_Estilos.css">
+
+
+    </head>
+    <body>
+        <h1 style="font-size:3vw;">Desafios</h1> <!-- titulo responsivo-->
+        <!-- Formulario-->
+          <form name="myForm"  onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+
+          <!--DESAFÍO DEL FORMULARIO DE CONTACTO POP-->
+          <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+        <!-------------------DESAFIO DE ANIMACION------------------------>
+        <h1>The @keyframes Rule</h1>
+        <div></div>
+
+        <!--------------------DESAFÍO DE MARCADOR-------------------->
+        <p><a href="https://github.com/Mmartz1233>Visit W3Schools.com!">GITHUB</a></p>
+
+        <!------------------------*EFECTO DE DESPLAZAMIENT-------------------->
+        <div class="main" id="section1">
+            <h2>Section 1</h2>
+            <p>Click on the link to see the "smooth" scrolling effect.</p>
+            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+          </div>
+          
+          <div class="main" id="section2">
+            <h2>Section 2</h2>
+            <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+          </div>
+
+          <!------------------------Desafio SLIDESHOW----------------------------->
+          <div id="slideshow">
+            <div>
+              <img src="images/thumbnail_1.PNG">
+            </div>
+            <div>
+              <img src="images/thumbnail_2.PNG">
+            </div>
+            <div>
+              Pretty cool eh? This slide is proof the content can be anything.
+            </div>
+          </div>
+
+          <!-----------------------CREANDO LINEA HORIZONTAL------------------------->
+          <HR>
+            <p>Linea horizontal</p>
+
+
+
+    </body>
+</html>
